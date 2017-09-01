@@ -9,13 +9,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: white;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+	overflow-x: hidden; 
 }
 
 .clearfix {zoom: 1}
@@ -249,6 +251,22 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+
+/*-----mobile navigation------------*/
+
+
+.mobile-nav-icon {
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: white;
 }
 
 /*----Sticky navi-----*/
