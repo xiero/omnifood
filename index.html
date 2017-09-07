@@ -22,18 +22,18 @@
       <link rel="stylesheet" type="text/css" href="resorces/css/queries.css">
       <link href="https://fonts.googleapis.com/css?family=Nunito:200,300i,400" rel="stylesheet">
       
-      
       <title>Omnifood</title>
     </head>
     <body>
        <div class="container-fluid">
            <div class=" col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <header>
+            <header id="home">
                 <nav>
                     <div class="row">
                       <img src="resorces/img/logo-white.png" alt="Omnifood logo" class="logo">
                       <img src="resorces/img/logo-black.png" alt="Omnifood logo" class="logo-black">
                       <ul class="main-nav js--main-nav">
+                          <li><a href="#home">Home</a></li>
                           <li><a href="#features">Food delivery</a></li>
                           <li><a href="#works">How it works</a></li>
                           <li><a href="#cities">Our cities</a></li>
@@ -353,12 +353,45 @@
                   </div>
                   <div class="row">
                      <div class ="col col-md-4 col-sm-4 col-xs-4">
+                        <label for="date">Date</label>
+                      </div>
+                      <div class = "col col-md-8 col-sm-8 col-xs-8">
+                         <input type="date" name="date" max="3000-12-31" placeholder="Date of reservation"  required>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class ="col col-md-4 col-sm-4 col-xs-4">
+                        <label for="email">Reservation Time</label>
+                      </div>
+                      <div class = "col col-md-8 col-sm-8 col-xs-8">
+                         <select name="find-us" id="find-us">
+                             <option value="8:00" selected>8:00</option>
+                             <option value="8:30">8:30</option>
+                             <option value="9:00">9:00</option>
+                             <option value="9:30">9:30</option>
+                             <option value="10:00">10:00</option>
+                             <option value="10:30">10:30</option>
+                             <option value="11:00">11:00</option>
+                             <option value="11:30">11:30</option>
+                             <option value="12:00">12:00</option>
+                             <option value="12:30">12:30</option>
+                             <option value="13:00">13:00</option>
+                             <option value="13:30">13:30</option>
+                             <option value="14:00">14:00</option>
+                             <option value="14:30">14:30</option>
+                         </select>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class ="col col-md-4 col-sm-4 col-xs-4">
                         <label for="email">Email</label>
                       </div>
                       <div class = "col col-md-8 col-sm-8 col-xs-8">
                          <input type="email" name="email" placeholder="Your email" required>
                      </div>
                   </div>
+                  
+                  <!--
                   <div class="row">
                      <div class ="col col-md-4 col-sm-4 col-xs-4">
                         <label for="email">How did you find us?</label>
@@ -372,14 +405,8 @@
                          </select>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class ="col col-md-4 col-sm-4 col-xs-4">
-                        <label for="email">Newsletter?</label>
-                      </div>
-                      <div class = "col col-md-8 col-sm-8 col-xs-8">
-                         <input type="checkbox" name="news" id="news" checked > Yes, please.
-                     </div>
-                  </div>
+                  -->
+                  
                   <div class="row">
                      <div class ="col col-md-4 col-sm-4 col-xs-4">
                         <label for="email">Drop us a line</label>
@@ -393,7 +420,8 @@
                         <label for="email">&nbsp;</label>
                       </div>
                       <div class = "col col-md-8 col-sm-8 col-xs-8">
-                         <input type="submit" value="Send it!" >
+                         <input type="submit" value="Submit!" >
+                         <input type="reset" value="Default!" >
                      </div>
                   </div>
                   

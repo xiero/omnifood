@@ -154,7 +154,8 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
     display: inline-block;
     padding: 10px 30px 10px 30px;
     font-weight: 300;
@@ -167,7 +168,8 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -566,12 +568,15 @@ cite img {
 
 input[type = text],
 input[type = email],
+input[type = date],
+input[type = time],
 select,
 textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #c6c6c6;
+	margin: 5px 0px;
     
 }
 
